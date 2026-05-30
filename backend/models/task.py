@@ -1,0 +1,29 @@
+import enum
+from sqlalchemy import Column, Integer, String, Text, ForeignKey, DateTime, Enum
+from sqlalchemy.orm import relationship
+from datetime import datetime
+from .db_setup import Base
+
+class TaskStatus(str, enum.Enum):
+    pending = "pending"
+    in_progress = "in_progress"
+    completed = "completed"
+
+
+class Task(Base):
+    __tablename__ = "tasks"
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String(255), nullable=False)
+    description = Column(Text, nullable=True)
+    status = Column(Enum(TaskStatus), default=TaskStatus.pending, nullable=False, index=True)
+    assigned_to = Column(Integer, ForeignKey("users.id"), nullable=True, index=True)
+    created_by = Column(Integer, ForeignKey("users.id"), nullable=False)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    assigner = relationship("User", foreign_keys=[assigned_to], back_populates="assigned_tasks")
+    creator = relationship("User", foreign_keys=[created_by], back_populates="created_tasks")
+
+    def __repr__(self) -> str:
+        return f"<Task {self.id}: {self.title} [{self.status}]>"
