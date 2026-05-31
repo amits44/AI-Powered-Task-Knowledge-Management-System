@@ -7,11 +7,30 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/auth': 'http://localhost:8000',
-      '/tasks': 'http://localhost:8000',
-      '/documents': 'http://localhost:8000',
-      '/search': 'http://localhost:8000',
-      '/analytics': 'http://localhost:8000',
+      '/auth': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+      '/tasks': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+      '/documents': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+      '/search': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+      '/analytics': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+      '/users': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
     }
   }
 })

@@ -1,4 +1,4 @@
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom"; 
 import { useAuth } from "../context/AuthContext";
 
 export function ProtectedRoute({ children, adminOnly = false }) {
@@ -14,12 +14,12 @@ export function Navbar() {
     <nav style={styles.nav}>
       <span style={styles.brand}>⚡ KnowledgeAI</span>
       <div style={styles.links}>
-        <a href="/dashboard" style={styles.link}>Dashboard</a>
-        <a href="/tasks" style={styles.link}>Tasks</a>
-        <a href="/search" style={styles.link}>Search</a>
-        {isAdmin && <a href="/documents" style={styles.link}>Documents</a>}
-        {isAdmin && <a href="/users" style={styles.link}>Users</a>}
-        {isAdmin && <a href="/analytics" style={styles.link}>Analytics</a>}
+        <Link to="/dashboard" style={styles.link}>Dashboard</Link>
+        <Link to="/tasks" style={styles.link}>Tasks</Link>
+        <Link to="/search" style={styles.link}>Search</Link>
+        {isAdmin && <Link to="/documents" style={styles.link}>Documents</Link>}
+        {isAdmin && <Link to="/users" style={styles.link}>Users</Link>}
+        {isAdmin && <Link to="/analytics" style={styles.link}>Analytics</Link>}
         <span style={styles.user}>{user?.name} ({user?.role})</span>
         <button onClick={logout} style={styles.logoutBtn}>Logout</button>
       </div>
