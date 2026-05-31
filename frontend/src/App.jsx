@@ -6,6 +6,7 @@ import Tasks from "./pages/Tasks";
 import Documents from "./pages/Documents";
 import Search from "./pages/Search";
 import Analytics from "./pages/Analytics";
+import Users from "./pages/Users";
 
 function PrivateRoute({ children, adminOnly = false }) {
   const { user, isAdmin } = useAuth();
@@ -23,6 +24,7 @@ function AppRoutes() {
       <Route path="/tasks" element={<PrivateRoute><Tasks /></PrivateRoute>} />
       <Route path="/search" element={<PrivateRoute><Search /></PrivateRoute>} />
       <Route path="/documents" element={<PrivateRoute adminOnly><Documents /></PrivateRoute>} />
+      <Route path="/users" element={<PrivateRoute adminOnly><Users /></PrivateRoute>} />
       <Route path="/analytics" element={<PrivateRoute adminOnly><Analytics /></PrivateRoute>} />
       <Route path="*" element={<Navigate to={user ? "/dashboard" : "/login"} />} />
     </Routes>

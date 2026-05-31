@@ -18,6 +18,7 @@ export function Navbar() {
         <a href="/tasks" style={styles.link}>Tasks</a>
         <a href="/search" style={styles.link}>Search</a>
         {isAdmin && <a href="/documents" style={styles.link}>Documents</a>}
+        {isAdmin && <a href="/users" style={styles.link}>Users</a>}
         {isAdmin && <a href="/analytics" style={styles.link}>Analytics</a>}
         <span style={styles.user}>{user?.name} ({user?.role})</span>
         <button onClick={logout} style={styles.logoutBtn}>Logout</button>

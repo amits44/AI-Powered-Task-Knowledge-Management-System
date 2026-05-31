@@ -23,7 +23,7 @@ export default function Login() {
   return (
     <div style={s.page}>
       <div style={s.card}>
-        <h1 style={s.title}>⚡ KnowledgeAI</h1>
+        <h1 style={s.title}>KnowledgeAI</h1>
         <p style={s.sub}>Task & Knowledge Management</p>
         <form onSubmit={handle}>
           <input style={s.input} type="email" placeholder="Email" value={form.email}
