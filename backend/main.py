@@ -37,6 +37,7 @@ def on_startup():
     db = SessionLocal()
     try:
         AuthService.seed_roles(db)
+        AuthService.seed_default_accounts(db)
     finally:
         db.close()
 
