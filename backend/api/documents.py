@@ -1,7 +1,7 @@
 from typing import List
 from fastapi import APIRouter, Depends, UploadFile, File, Form, BackgroundTasks
 from sqlalchemy.orm import Session
-from models.db_setup import get_db
+from models.db_setup import get_db, SessionLocal
 from models.user import User
 from schema.document import DocumentOut
 from services.document_service import DocumentService
@@ -10,8 +10,12 @@ from core.dependencies import require_admin, require_user_or_admin
 
 router = APIRouter(prefix="/documents", tags=["documents"])
 
-def _background_index(db: Session, document_id: int):
-    index_document(db, document_id)
+def _background_index(document_id: int):
+    db = SessionLocal()
+    try:
+        index_document(db, document_id)
+    finally:
+        db.close()
 
 @router.post("", response_model=DocumentOut)
 def upload_document(
@@ -22,7 +26,7 @@ def upload_document(
     current_user: User = Depends(require_admin),
 ):
     doc = DocumentService.upload(db, file, title, user_id=current_user.id)
-    background_tasks.add_task(_background_index, db, doc.id)
+    background_tasks.add_task(_background_index, doc.id)
     return doc
 
 
@@ -50,5 +54,5 @@ def reindex_document(
     db: Session = Depends(get_db),
     current_user: User = Depends(require_admin),
 ):
-    background_tasks.add_task(_background_index, db, doc_id)
+    background_tasks.add_task(_background_index, doc_id)
     return {"message": "Re-indexing started", "document_id": doc_id}
