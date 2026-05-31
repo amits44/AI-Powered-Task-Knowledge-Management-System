@@ -1,0 +1,130 @@
+================================================================================
+                        FUTURE TRANS CORPORATION
+                      Q2 FINANCIAL REPORT — 2026
+                       April 1, 2026 – June 30, 2026
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Future Trans Corporation delivered strong performance in Q2 2026, reporting a
+net revenue of $4.82 million, reflecting a 14.3% year-over-year growth compared
+to Q2 2025. Operating expenses were well-controlled, resulting in a net profit
+margin of 22.6%. The company continues to expand its client base across
+translation and localization services.
+
+================================================================================
+1. REVENUE BREAKDOWN
+================================================================================
+
+  Service Category                  Q2 2026 ($)     Q2 2025 ($)     YoY Change
+  ─────────────────────────────────────────────────────────────────────────────
+  Document Translation               1,850,000       1,620,000        +14.2%
+  Legal & Certified Translation        920,000         780,000        +17.9%
+  Technical Localization               740,000         650,000        +13.8%
+  Interpretation Services              610,000         540,000        +13.0%
+  Software & UI Localization           450,000         380,000        +18.4%
+  Subtitling & Media                   250,000         250,000         +0.0%
+  ─────────────────────────────────────────────────────────────────────────────
+  TOTAL REVENUE                      4,820,000       4,220,000        +14.2%
+
+================================================================================
+2. EXPENSE BREAKDOWN
+================================================================================
+
+  Expense Category                  Q2 2026 ($)     Q2 2025 ($)     YoY Change
+  ─────────────────────────────────────────────────────────────────────────────
+  Translator & Linguist Fees         1,540,000       1,380,000        +11.6%
+  Salaries & Benefits                  820,000         760,000         +7.9%
+  Technology & Software Licenses       210,000         190,000        +10.5%
+  Office & Administrative              150,000         145,000         +3.4%
+  Marketing & Business Dev             180,000         160,000        +12.5%
+  Legal & Compliance                    95,000          88,000         +8.0%
+  Miscellaneous                         35,000          32,000         +9.4%
+  ─────────────────────────────────────────────────────────────────────────────
+  TOTAL EXPENSES                     3,030,000       2,755,000        +10.0%
+
+================================================================================
+3. PROFIT & LOSS SUMMARY
+================================================================================
+
+                                    Q2 2026 ($)     Q2 2025 ($)
+  ─────────────────────────────────────────────────────────────
+  Total Revenue                      4,820,000       4,220,000
+  Total Expenses                     3,030,000       2,755,000
+  ─────────────────────────────────────────────────────────────
+  Gross Profit                       1,790,000       1,465,000
+  Tax (18%)                            322,200         263,700
+  ─────────────────────────────────────────────────────────────
+  NET PROFIT                         1,467,800       1,201,300
+  Net Profit Margin                      22.6%           28.5%
+
+================================================================================
+4. CASH FLOW STATEMENT
+================================================================================
+
+  Operating Activities
+    Cash received from clients        4,910,000
+    Cash paid to suppliers/staff     (2,980,000)
+    Net Cash from Operations          1,930,000
+
+  Investing Activities
+    Purchase of equipment               (85,000)
+    Software development costs         (120,000)
+    Net Cash from Investing            (205,000)
+
+  Financing Activities
+    Loan repayment                     (150,000)
+    Dividend paid                      (200,000)
+    Net Cash from Financing            (350,000)
+  ─────────────────────────────────────────────────────────────
+  NET CHANGE IN CASH                  1,375,000
+  Opening Cash Balance                2,240,000
+  CLOSING CASH BALANCE                3,615,000
+
+================================================================================
+5. KEY PERFORMANCE INDICATORS
+================================================================================
+
+  Metric                                Q2 2026         Q2 2025
+  ─────────────────────────────────────────────────────────────
+  Total Active Clients                      342             298
+  New Clients Acquired                       64              51
+  Client Retention Rate                    91.2%           89.7%
+  Avg Revenue per Client ($)            14,094          14,161
+  Projects Delivered                      1,847           1,623
+  On-Time Delivery Rate                   96.4%           94.1%
+  Words Translated (millions)              48.3            41.7
+  Employee Headcount                         87              81
+
+================================================================================
+6. REGIONAL REVENUE DISTRIBUTION
+================================================================================
+
+  Region                            Revenue ($)       % of Total
+  ─────────────────────────────────────────────────────────────
+  North America                      1,830,000            38.0%
+  Europe                             1,350,000            28.0%
+  Middle East & Africa                 770,000            16.0%
+  Asia Pacific                         580,000            12.0%
+  Latin America                        290,000             6.0%
+  ─────────────────────────────────────────────────────────────
+  TOTAL                              4,820,000           100.0%
+
+================================================================================
+7. OUTLOOK — Q3 2026
+================================================================================
+
+  - Projected revenue target: $5.1 million (+5.8% QoQ)
+  - Planned hiring of 6 additional linguists in the APAC region
+  - Launch of AI-assisted translation pipeline expected to reduce
+    turnaround time by 20%
+  - New contracts under negotiation with 3 Fortune 500 companies
+  - Expansion into Southeast Asian language pairs (Thai, Vietnamese,
+    Bahasa Indonesia)
+
+================================================================================
+PREPARED BY:   Finance Department, Future Trans Corporation
+REVIEWED BY:   Chief Financial Officer
+DATE:          June 30, 2026
+CONFIDENTIAL:  This document is intended for internal use only.
+================================================================================
