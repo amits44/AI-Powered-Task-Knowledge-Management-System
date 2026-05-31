@@ -2,12 +2,12 @@ from typing import Optional, List
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from models.task import Task, TaskStatus
-from schema.task import TaskCreate, TaskUpdate
+from schema.task import CreateTask, UpdateTask
 from services.activity_service import ActivityService
 
 class TaskService:
     @staticmethod
-    def create(db: Session, payload: TaskCreate, creator_id: int) -> Task:
+    def create(db: Session, payload: CreateTask, creator_id: int) -> Task:
         task = Task(
             title=payload.title,
             description=payload.description,
@@ -37,7 +37,7 @@ class TaskService:
         return task
 
     @staticmethod
-    def update_status(db: Session, task_id: int, payload: TaskUpdate, user_id: int) -> Task:
+    def update_status(db: Session, task_id: int, payload: UpdateTask, user_id: int) -> Task:
         task = TaskService.get_by_id(db, task_id)
         task.status = payload.status
         db.commit()

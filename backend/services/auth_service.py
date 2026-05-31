@@ -3,7 +3,7 @@ from fastapi import HTTPException, status
 from models.user import User
 from models.role import Role
 from core.security import hash_password, verify_password, create_access_token
-from schema.auth import LoginRequest, TokenResponse, UserCreate
+from schema.auth import LoginRequest, TokenResponse, CreateUser
 from services.activity_service import ActivityService
 
 class AuthService:
@@ -15,7 +15,7 @@ class AuthService:
         db.commit()
 
     @staticmethod
-    def register(db: Session, payload: UserCreate) -> User:
+    def register(db: Session, payload: CreateUser) -> User:
         if db.query(User).filter(User.email == payload.email).first():
             raise HTTPException(status_code=400, detail="Email already registered")
         role = db.query(Role).filter(Role.id == payload.role_id).first()

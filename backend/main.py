@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from models.db_setup import Base, engine, SessionLocal
-from api import auth, tasks, documents, search, analytics
+from api import auth, task, documents, search, analytics
 from services.auth_service import AuthService
 import models.role          
 import models.user          
@@ -24,7 +24,7 @@ app.add_middleware(
 )
 
 app.include_router(auth.router)
-app.include_router(tasks.router)
+app.include_router(task.router)
 app.include_router(documents.router)
 app.include_router(search.router)
 app.include_router(analytics.router)
