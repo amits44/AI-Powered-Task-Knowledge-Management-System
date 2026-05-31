@@ -17,7 +17,7 @@ frontend/.env.*.local
 # =========================
 # Backend (FastAPI)
 # =========================
-
+backend/faiss_index
 backend/__pycache__/
 backend/*.py[cod]
 backend/*$py.class
